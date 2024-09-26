@@ -1,0 +1,218 @@
+/* ISI */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    background-color: #f4f4f4;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.containerfooter{
+    background-color: #504A48;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 70px;
+    text-align: center;
+    color: #333;
+    font-weight: 1000;
+}
+
+p {
+    font-size: 20px;
+    color: #666;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+ol {
+    list-style-position: inside;
+    padding-left: 0px;
+}
+
+ol li {
+    margin-bottom: 10px; 
+    font-size: 16px;
+    color: #333; 
+}
+
+section {
+    position: relative;
+    padding: 80px 0;
+    text-align: center;
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 5px;
+    background-color: #49B66E;
+    border-radius: 5px; 
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+.story h2, .goals h2, .product h2, .visi h2, .misi h2, .achievement-section h2 {
+    color: #008C45;
+    font-family: 'Poppins';
+}
+
+.container section {
+    margin-bottom: 30px;
+}
+
+.container section p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* <!-- achievment --> */
+/* Untuk memastikan card memiliki tinggi yang seragam */
+.cardacv {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 250px; /* Fleksibel, dengan ukuran minimum card 250px */
+    max-width: 250px;
+    min-height: 100%; /* Memastikan semua card tingginya sama */
+}
+
+/* Atur layout card-container */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch; /* Memastikan semua card tingginya sama */
+}
+
+/* Atur image di dalam card */
+.card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Agar konten di dalam card merespon flexbox */
+.card-content {
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Konten card seperti judul dan teks */
+.card-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: justify;
+    flex-grow: 1; /* Biarkan teks memenuhi ruang kosong */
+}
+
+/* Atur posisi tombol agar selalu berada di tengah bawah */
+.btns {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #49B66E;
+    border: 2px solid #49B66E;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Agar tombol berada di bagian bawah */
+    align-self: center; /* Agar tombol berada di tengah card */
+}
+
+.btns:hover {
+    background-color: #49B66E;
+    color: white;
+}
+
+.more-link {
+    margin-top: 50px;
+}
+
+.more-link a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #49B66E;
+}
+
+.more-link a:hover {
+    text-decoration: underline;
+}
+
+/* Media query untuk layar dengan ukuran maksimum 576px (ukuran small dan handphone) */
+@media (max-width: 576px) {
+    .card-container {
+        justify-content: center; /* Mengubah posisi card menjadi di tengah */
+    }
+}
+
+@media (max-width: 750px) and (min-width: 500px) {
+    .card-container {
+        justify-content: center; /* Menampilkan 2 card di tengah */
+        gap: 10px; /* Mengurangi jarak antar card */
+    }
+
+    .cardacv {
+        flex: 1 1 calc(50% - 10px); /* Membagi 50% lebar untuk dua card */
+    }
+}
+
+/* Media query untuk layar dengan ukuran maksimum 500px (small devices) */
+@media (max-width: 500px) {
+    .card-container {
+        justify-content: center; /* Mengubah posisi card menjadi di tengah */
+        gap: 10px; /* Mengurangi gap antar card */
+    }
+
+    .cardacv {
+        flex: 1 1 100%; /* Menampilkan 1 card per baris */
+    }
+}
+
+/* Media query untuk layar dengan ukuran maksimum 1024px */
+@media (max-width: 1024px) {
+    .card-container {
+        justify-content: center; /* Memastikan card tetap di tengah */
+        gap: 10px; /* Mengurangi gap antar card */
+    }
+
+    .cardacv {
+        flex: 1 1 calc(45% - 10px); /* Mengatur lebar card dan mengurangi gap */
+    }
+}

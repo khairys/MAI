@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>barang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
+
+  </head>
+
+  <body class="poppins-regular" >
+    
+    <!-- NAVBAR -->
+
+    <div>
+      <nav class="navbar p-0 navbar-expand-md bg-light fixed-top" >
+          <div class="container-lg py-1">
+            <a class="navbar-brand pt-0" href="#">
+              <img src="/gallery/LOGO PMW.png" height="45px" class="" alt="Logo">
+            </a>
+
+            <div class="nav-item ms-auto pb-1 px-2  d-none d-sm-block d-md-none">
+              <button id="loginButton" class="btn  btn-sm btn-outline-success mt-1 rounded-3 border-2 " type="button" style="font-weight: bolder;">Login</button>
+            </div>
+            
+            <div id="profileButton" class="mx-3 pt-1 nav-item d-none d-sm-block d-md-none">
+              <a href="#"><i class="bi bi-person-circle"></i></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item px-2">
+                  <a class="nav-link" aria-current="page" href="home.html" >Home</a>
+                </li>
+        
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    About us
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="home.html#ourStory">Our story</a></li>
+                    <li><a class="dropdown-item" href="home.html#ourGoals">Goals</a></li>
+                    <li><a class="dropdown-item" href="home.html#ourProduct">Product</a></li>
+                    <li><a class="dropdown-item" href="home.html#ourVisi">Vision</a></li>
+                    <li><a class="dropdown-item" href="home.html#ourMisi">Mission</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown px-2">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Product
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Barang</a></li>
+                    <li><a class="dropdown-item" href="jasa.html">Jasa</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="home.html#footer">Contact</a>
+                </li>
+                
+                <li class="nav-item px-2 d-none d-md-block">
+                  <button id="loginButton" class="btn mx-2 btn-sm btn-outline-success mt-1 rounded-3 border-2 " type="button" style="font-weight: bolder;" onclick="location.href = 'login.html'">Login</button>
+                </li>
+                
+                <li id="profileButton" class="d-none d-md-block nav-item mx-2 pb">
+                  <a href="#"><i class="bi bi-person-circle"></i></a>
+                </li>
+              </ul>
+            </div>
+
+           
+          </div>
+        </nav>
+   </div>
+    
+
+    
+    <!-- Barang -->
+
+    
+
+    <div id="frameProduk" class=" rounded-5 p-5" style="margin: 50px; margin-top: 120px;">
+
+      <h1 class="text-center mb-3 " style="font-weight: 900; color: white; ">Barang</h1>
+
+      <div class="row row-cols-lg-4 row-cols-md-2 g-4 mb-5">
+
+        <div class="col">
+
+          <div id="cardProduct" class="card p-3 rounded-4 h-100">
+
+            <img src="gallery/FOTO PRODUK/Casuarina equisetifolia.jpg" class="card-img-top" alt="...">
+          
+            <div class="card-body pb-0">
+              <h5 class="card-title text-center mt-2 mb-0" style="font-weight: bolder; font-size: 28px; ">Cemara laut</h5>
+              
+            </div>
+
+            <button id="ProductButton" type="button" class="btn m-3 btn-outline-success rounded-4 border-2 mx-auto" data-bs-toggle="modal" data-bs-target="#modal1" style="width: 150px;">
+              Pesan
+            </button>
+
+            
+
+
+          </div>
+        </div>
+        <div class="col">
+          <div id="cardProduct" class="card p-3 rounded-4 h-100">
+
+            <img src="gallery/FOTO PRODUK/Xylocatpus sp.jpg" class="card-img-top" alt="...">
+          
+            <div class="card-body pb-0">
+              <h5 class="card-title text-center mt-2 mb-0" style="font-weight: bolder; font-size: 28px; ">Nyiri</h5>
+              
+            </div>
+
+             <button id="ProductButton" type="button" class="btn m-3 btn-outline-success rounded-4 border-2 mx-auto" data-bs-toggle="modal" data-bs-target="#modal2" style="width: 150px;">
+              Pesan
+            </button>
+
+          </div>
+        </div>
+        <div class="col">
+          <div id="cardProduct" class="card p-3 rounded-4 h-100">
+
+            <img src="gallery/FOTO PRODUK/Avicennia sp.jpg" class="card-img-top" alt="...">
+          
+            <div class="card-body pb-0">
+              <h5 class="card-title text-center mt-2 mb-0" style="font-weight: bolder; font-size: 28px; ">Api-api</h5>
+              
+            </div>
+
+             <button id="ProductButton" type="button" class="btn m-3 btn-outline-success rounded-4 border-2 mx-auto" data-bs-toggle="modal" data-bs-target="#modal3" style="width: 150px;">
+              Pesan
+            </button>
+
+          </div>
+        </div>
+        <div class="col">
+          <div id="cardProduct" class="card p-3 rounded-4 h-100">
+
+            <img src="gallery/FOTO PRODUK/Bruguiera sp.jpg" class="card-img-top" alt="...">
+          
+            <div class="card-body pb-0">
+              <h5 class="card-title text-center mt-2 mb-0" style="font-weight: bolder; font-size: 28px; ">Bruguiera sp</h5>
+              
+            </div>
+
+             <button id="ProductButton" type="button" class="btn m-3 btn-outline-success rounded-4 border-2 mx-auto" data-bs-toggle="modal" data-bs-target="#modal4" style="width: 150px;">
+              Pesan
+            </button>
+
+          </div>
+        </div>
+        <div class="col">
+          <div id="cardProduct" class="card p-3 rounded-4 h-100">
+
+            <img src="gallery/FOTO PRODUK/Rhizophora sp.jpg" class="card-img-top" alt="...">
+          
+            <div class="card-body pb-0">
+              <h5 class="card-title text-center mt-2 mb-0" style="font-weight: bolder; font-size: 28px; ">Bakau</h5>
+              
+            </div>
+
+             <button id="ProductButton" type="button" class="btn m-3 btn-outline-success rounded-4 border-2 mx-auto" data-bs-toggle="modal" data-bs-target="#modal5" style="width: 150px;">
+              Pesan
+            </button>
+
+          </div>
+        </div>
+        <div class="col">
+          <div id="cardProduct" class="card p-3 rounded-4 h-100">
+
+            <img src="gallery/FOTO PRODUK/Bambu apus.jpg" class="card-img-top" alt="...">
+          
+            <div class="card-body pb-0">
+              <h5 class="card-title text-center mt-2 mb-0" style="font-weight: bolder; font-size: 28px; ">Bambu apus</h5>
+              
+            </div>
+
+             <button id="ProductButton" type="button" class="btn m-3 btn-outline-success rounded-4 border-2 mx-auto" data-bs-toggle="modal" data-bs-target="#modal6" style="width: 150px;">
+              Pesan
+            </button>
+
+          </div>
+        </div>
+        <div class="col">
+          <div id="cardProduct" class="card p-3 rounded-4 h-100">
+
+            <img src="gallery/FOTO PRODUK/Ajir.jpg" class="card-img-top" alt="...">
+          
+            <div class="card-body pb-0">
+              <h5 class="card-title text-center mt-2 mb-0" style="font-weight: bolder; font-size: 28px; ">Ajir</h5>
+              
+            </div>
+
+             <button id="ProductButton" type="button" class="btn m-3 btn-outline-success rounded-4 border-2 mx-auto" data-bs-toggle="modal" data-bs-target="#modal7" style="width: 150px;">
+              Pesan
+            </button>
+
+          </div>
+        </div>
+        <div class="col">
+          <div id="cardProduct" class="card p-3 rounded-4 h-100">
+
+            <img src="gallery/FOTO PRODUK/Tali.jpg" class="card-img-top" style="border: 2px rgb(207, 207, 207) solid;" alt="...">
+          
+            <div class="card-body pb-0">
+              <h5 class="card-title text-center mt-2 mb-0" style="font-weight: bolder; font-size: 28px; ">Tali</h5>
+              
+            </div>
+
+             <button id="ProductButton" type="button" class="btn m-3 btn-outline-success rounded-4 border-2 mx-auto" data-bs-toggle="modal" data-bs-target="#modal8" style="width: 150px;">
+              Pesan
+            </button>
+
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+
+
+    <!-- MODAL9 -->
+
+    
+
+    <div class="modal fade" id="modal1" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header pb-2">
+            <h1 class="modal-title fs-5 ps-1 "  style="font-weight: bolder; " id="staticBackdropLabel"> Cemara laut</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row">
+              <!-- Image -->
+              <div class="col-5 text-center">
+                <img src="gallery/FOTO PRODUK/Casuarina equisetifolia.jpg" class="img-fluid" alt="Product Image" style="width: 170px; border: 1px solid black;">
+              </div>
+              
+              <!-- Description -->
+              <div class="col-7 " style="font-size: 14px;">
+    
+                <p>Tinggi batang  : 15-100 cm</p>
+                <p>Diameter batang : 1-5 cm</p>
+                <p>Usia bibit siap tanam : 3-6 bulan</p>
+                
+              </div>
+
+
+              <div class="col-12 pt-3 ps-4">
+                <p>dolor sit amet consectetur adipisicing elit. Labore, ea nesciunt odio inventore magnam saepe facere nostrum vero in possimus sed aspernatur deleniti modi officiis ipsum suscipit. Dicta, molestiae dolorum.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Footer -->
+          <div class="modal-footer pt-0 ms-4" style="color: rgb(126, 124, 124);">
+            <div class="col-12" style="font-size: 10px;">
+              <p class="m-0">Cara Pembelian</p>
+              <p class="m-0"> 1. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 2. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 3. Syarat dan ketentuan pembelian berlaku.</p>
+            </div>
+            <div class="col-12 text-end">
+              <button id="KembaliModal" type="button" class="btn btn-secondary rounded-2 border-2 py-1" data-bs-dismiss="modal">Kembali</button>
+              <button type="button" class="btn btn-success rounded-2 border-2 py-1" style="width: 80px;">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="modal fade" id="modal2" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header pb-2">
+            <h1 class="modal-title fs-5 ps-1"   style="font-weight: bolder; "id="staticBackdropLabel"> Nyiri</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row">
+              <!-- Image -->
+              <div class="col-5 text-center">
+                <img src="gallery/FOTO PRODUK/Xylocatpus sp.jpg" class="img-fluid" alt="Product Image" style="width: 170px; border: 1px solid black;">
+              </div>
+              
+              <!-- Description -->
+              <div class="col-7 " style="font-size: 14px;">
+                <p>Tinggi batang : 30-50 cm</p>
+                <p>Diameter batang 1-2 cm</p>
+                <p>Jumlah daun :  2-6 </p>
+                
+              </div>
+
+
+              <div class="col-12 pt-3 ps-4">
+                <p>dolor sit amet consectetur adipisicing elit. Labore, ea nesciunt odio inventore magnam saepe facere nostrum vero in possimus sed aspernatur deleniti modi officiis ipsum suscipit. Dicta, molestiae dolorum.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Footer -->
+          <div class="modal-footer pt-0 ms-4" style="color: rgb(126, 124, 124);">
+            <div class="col-12" style="font-size: 10px;">
+              <p class="m-0">Cara Pembelian</p>
+              <p class="m-0"> 1. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 2. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 3. Syarat dan ketentuan pembelian berlaku.</p>
+            </div>
+            <div class="col-12 text-end">
+              <button id="KembaliModal" type="button" class="btn btn-secondary rounded-2 border-2 py-1" data-bs-dismiss="modal">Kembali</button>
+              <button type="button" class="btn btn-success rounded-2 border-2 py-1" style="width: 80px;">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="modal fade" id="modal3" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header pb-2">
+            <h1 class="modal-title fs-5 ps-1"   style="font-weight: bolder; "id="staticBackdropLabel"> Api-api</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row">
+              <!-- Image -->
+              <div class="col-5 text-center">
+                <img src="gallery/FOTO PRODUK/Avicennia sp.jpg" class="img-fluid" alt="Product Image" style="width: 170px; border: 1px solid black;">
+              </div>
+              
+              <!-- Description -->
+              <div class="col-7 " style="font-size: 14px;">
+                <p>Tinggi batang : 15-60 cm</p>
+                <p>Diameter batang : 1-2 cm</p>
+                <p>Jumlah daun : 2-4 daun</p>
+                
+              </div>
+
+
+              <div class="col-12 pt-3 ps-4">
+                <p>dolor sit amet consectetur adipisicing elit. Labore, ea nesciunt odio inventore magnam saepe facere nostrum vero in possimus sed aspernatur deleniti modi officiis ipsum suscipit. Dicta, molestiae dolorum.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Footer -->
+          <div class="modal-footer pt-0 ms-4" style="color: rgb(126, 124, 124);">
+            <div class="col-12" style="font-size: 10px;">
+              <p class="m-0">Cara Pembelian</p>
+              <p class="m-0"> 1. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 2. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 3. Syarat dan ketentuan pembelian berlaku.</p>
+            </div>
+            <div class="col-12 text-end">
+              <button id="KembaliModal" type="button" class="btn btn-secondary rounded-2 border-2 py-1" data-bs-dismiss="modal">Kembali</button>
+              <button type="button" class="btn btn-success rounded-2 border-2 py-1" style="width: 80px;">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="modal fade" id="modal4" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header pb-2">
+            <h1 class="modal-title fs-5 ps-1"   style="font-weight: bolder; "id="staticBackdropLabel"> Title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row">
+              <!-- Image -->
+              <div class="col-5 text-center">
+                <img src="gallery/FOTO PRODUK/Bruguiera sp.jpg" class="img-fluid" alt="Product Image" style="width: 170px; border: 1px solid black;">
+              </div>
+              
+              <!-- Description -->
+              <div class="col-7 " style="font-size: 14px;">
+                <p>Tinggi batang : 30-60 cm</p>
+                <p>Diameter batang : 1-2 cm</p>
+                <p>Jumlah daun : 4-6 daun</p>
+                <p>Warna bunga : merah / kuning</p>
+                
+              </div>
+
+
+              <div class="col-12 pt-3 ps-4">
+                <p>dolor sit amet consectetur adipisicing elit. Labore, ea nesciunt odio inventore magnam saepe facere nostrum vero in possimus sed aspernatur deleniti modi officiis ipsum suscipit. Dicta, molestiae dolorum.</p>
+              </div>
+            </div>
+          </div>
+    
+        
+          <!-- Footer -->
+          <div class="modal-footer pt-0 ms-4" style="color: rgb(126, 124, 124);">
+            <div class="col-12" style="font-size: 10px;">
+              <p class="m-0">Cara Pembelian</p>
+              <p class="m-0"> 1. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 2. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 3. Syarat dan ketentuan pembelian berlaku.</p>
+            </div>
+            <div class="col-12 text-end">
+              <button id="KembaliModal" type="button" class="btn btn-secondary rounded-2 border-2 py-1" data-bs-dismiss="modal">Kembali</button>
+              <button type="button" class="btn btn-success rounded-2 border-2 py-1" style="width: 80px;">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="modal fade" id="modal5" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header pb-2">
+            <h1 class="modal-title fs-5 ps-1"   style="font-weight: bolder; "id="staticBackdropLabel"> Title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row">
+              <!-- Image -->
+              <div class="col-5 text-center">
+                <img src="gallery/FOTO PRODUK/Rhizophora sp.jpg" class="img-fluid" alt="Product Image" style="width: 170px; border: 1px solid black;">
+              </div>
+              
+              <!-- Description -->
+              <div class="col-7 " style="font-size: 14px;">
+                <p>Tinggi batang : 30-50 cm
+                  </p>
+                <p>Diameter batang : 1-2 cm</p>
+                <p>Jumlah daun : 4-6 daun</p>
+
+                
+              </div>
+
+
+              <div class="col-12 pt-3 ps-4">
+                <p>dolor sit amet consectetur adipisicing elit. Labore, ea nesciunt odio inventore magnam saepe facere nostrum vero in possimus sed aspernatur deleniti modi officiis ipsum suscipit. Dicta, molestiae dolorum.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Footer -->
+          <div class="modal-footer pt-0 ms-4" style="color: rgb(126, 124, 124);">
+            <div class="col-12" style="font-size: 10px;">
+              <p class="m-0">Cara Pembelian</p>
+              <p class="m-0"> 1. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 2. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 3. Syarat dan ketentuan pembelian berlaku.</p>
+            </div>
+            <div class="col-12 text-end">
+              <button id="KembaliModal" type="button" class="btn btn-secondary rounded-2 border-2 py-1" data-bs-dismiss="modal">Kembali</button>
+              <button type="button" class="btn btn-success rounded-2 border-2 py-1" style="width: 80px;">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="modal fade" id="modal6" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header pb-2">
+            <h1 class="modal-title fs-5 ps-1"   style="font-weight: bolder; "id="staticBackdropLabel"> Title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row">
+              <!-- Image -->
+              <div class="col-5 text-center">
+                <img src="gallery/FOTO PRODUK/Bambu apus.jpg" class="img-fluid" alt="Product Image" style="width: 170px; border: 1px solid black;">
+              </div>
+              
+              <!-- Description -->
+              <div class="col-7 " style="font-size: 14px;">
+
+                <p>Panjang bambu : 4 meter
+                </p>
+                <p>Diameter bambu : 15 cm</p>
+              </div>
+
+
+              <div class="col-12 pt-3 ps-4">
+                <p>dolor sit amet consectetur adipisicing elit. Labore, ea nesciunt odio inventore magnam saepe facere nostrum vero in possimus sed aspernatur deleniti modi officiis ipsum suscipit. Dicta, molestiae dolorum.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Footer -->
+          <div class="modal-footer pt-0 ms-4" style="color: rgb(126, 124, 124);">
+            <div class="col-12" style="font-size: 10px;">
+              <p class="m-0">Cara Pembelian</p>
+              <p class="m-0"> 1. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 2. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 3. Syarat dan ketentuan pembelian berlaku.</p>
+            </div>
+            <div class="col-12 text-end">
+              <button id="KembaliModal" type="button" class="btn btn-secondary rounded-2 border-2 py-1" data-bs-dismiss="modal">Kembali</button>
+              <button type="button" class="btn btn-success rounded-2 border-2 py-1" style="width: 80px;">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="modal fade" id="modal7" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header pb-2">
+            <h1 class="modal-title fs-5 ps-1"   style="font-weight: bolder; "id="staticBackdropLabel"> Title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row">
+              <!-- Image -->
+              <div class="col-5 text-center">
+                <img src="gallery/FOTO PRODUK/Ajir.jpg" class="img-fluid" alt="Product Image" style="width: 170px; border: 1px solid black;">
+              </div>
+              
+              <!-- Description -->
+              <div class="col-7 " style="font-size: 14px;">
+                <p>panjang barang : 70 cm</p>
+                
+              </div>
+
+
+              <div class="col-12 pt-3 ps-4">
+                <p>dolor sit amet consectetur adipisicing elit. Labore, ea nesciunt odio inventore magnam saepe facere nostrum vero in possimus sed aspernatur deleniti modi officiis ipsum suscipit. Dicta, molestiae dolorum.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Footer -->
+          <div class="modal-footer pt-0 ms-4" style="color: rgb(126, 124, 124);">
+            <div class="col-12" style="font-size: 10px;">
+              <p class="m-0">Cara Pembelian</p>
+              <p class="m-0"> 1. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 2. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 3. Syarat dan ketentuan pembelian berlaku.</p>
+            </div>
+            <div class="col-12 text-end">
+              <button id="KembaliModal" type="button" class="btn btn-secondary rounded-2 border-2 py-1" data-bs-dismiss="modal">Kembali</button>
+              <button type="button" class="btn btn-success rounded-2 border-2 py-1" style="width: 80px;">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="modal fade" id="modal8" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header pb-2">
+            <h1 class="modal-title fs-5 ps-1"   style="font-weight: bolder; "id="staticBackdropLabel"> Title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row">
+              <!-- Image -->
+              <div class="col-5 text-center">
+                <img src="gallery/FOTO PRODUK/Tali.jpg" class="img-fluid" alt="Product Image" style="width: 170px; border: 1px solid black;">
+              </div>
+              
+              <!-- Description -->
+              <div class="col-7 " style="font-size: 14px;">
+                <p>Warna tali : Hitam </p>
+    
+                
+              </div>
+
+
+              <div class="col-12 pt-3 ps-4">
+                <p>dolor sit amet consectetur adipisicing elit. Labore, ea nesciunt odio inventore magnam saepe facere nostrum vero in possimus sed aspernatur deleniti modi officiis ipsum suscipit. Dicta, molestiae dolorum.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Footer -->
+          <div class="modal-footer pt-0 ms-4" style="color: rgb(126, 124, 124);">
+            <div class="col-12" style="font-size: 10px;">
+              <p class="m-0">Cara Pembelian</p>
+              <p class="m-0"> 1. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 2. Syarat dan ketentuan pembelian berlaku.</p>
+              <p class="m-0"> 3. Syarat dan ketentuan pembelian berlaku.</p>
+            </div>
+            <div class="col-12 text-end">
+              <button id="KembaliModal" type="button" class="btn btn-secondary rounded-2 border-2 py-1" data-bs-dismiss="modal">Kembali</button>
+              <button type="button" class="btn btn-success rounded-2 border-2 py-1" style="width: 80px;">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+
+</html>

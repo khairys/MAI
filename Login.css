@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Menyembunyikan gambar tetapi menggunakannya sebagai background */
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Menempatkan gambar di belakang konten */
+}
+
+/* Menjaga konten tetap di atas background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+}
+
+.content {
+    z-index: 1; /* Konten di atas background */
+    color: white;
+    font-size: 24px;
+}
+
+
+.login-container {
+    background-color: rgba(250, 242, 242, 0.701); /* Lebih transparan */
+    backdrop-filter: blur(10px); /* Efek blur pada background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* .login-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+} */
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'poppins';
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'poppins';
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'poppins';
+}
+
+.login-button:hover {
+    background-color: #218838;
+}
+
+.or {
+    margin: 20px 0;
+    color: #4CAF50;
+    font-size: 16px;
+    font-family: 'poppins';
+    text-align: center;
+    font-weight: 600;
+}
+
+.social-login button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    font-family: 'poppins';
+    display: flex; 
+    align-items: center; 
+    justify-content:center; 
+}
+
+.fb-login {
+    background-color: #3b5998;
+    color: white;
+    
+}
+
+button img {
+    width: px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-login {
+    background-color: #ffffff;
+    color: #333;
+    font-weight: 500;
+}
+
+.social-login button:hover {
+    opacity: 0.9;
+}
+
+.signup-text {
+    margin-top: 15px;
+    color: #333;
+    font-family: 'poppins';
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.signup-text a {
+    color: #4CAF50;
+    text-decoration: none;
+}
